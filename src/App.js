@@ -10,6 +10,7 @@ import Register from './components/Register/Register';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 
+//You need to sign into your Clarifai account to get an APIKey
 const app = new Clarifai.App({
  apiKey: 'AUTH_KEY'
 });
