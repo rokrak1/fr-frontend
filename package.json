@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rokrak1.github.io/fr-frontend",
   "name": "face-recognition",
   "version": "0.1.0",
   "private": true,
@@ -12,10 +13,14 @@
     "react-parallax-tilt": "^1.5.45",
     "react-scripts": "4.0.3",
     "react-tilt": "^0.1.4",
+    "serve": "^12.0.0",
     "tachyons": "^4.12.0",
+    "tsparticles": "^1.33.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "react-particles-js": "^3.5.3"
   }
 }

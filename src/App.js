@@ -99,7 +99,7 @@ class App extends Component{
 	}
 	onButtonSubmit = () =>{
 		this.setState({imageUrl:this.state.input});
-		fetch('http://localhost:3000/imageUrl',{
+		fetch('https://calm-hamlet-45782.herokuapp.com/imageUrl',{
 			method:'post',
 			headers:{'Content-Type':'application/json'},
 			body:JSON.stringify({
@@ -108,10 +108,8 @@ class App extends Component{
 		})
 		.then(response => response.json())
 		.then(resp => {
-			console.log(resp);
-
 			if(resp){
-				fetch('http://localhost:3000/image',{
+				fetch('https://calm-hamlet-45782.herokuapp.com/image',{
 					method:'put',
 					headers:{'Content-Type':'application/json'},
 					body:JSON.stringify({
