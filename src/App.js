@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Particles from 'react-particles-js';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -7,7 +8,6 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
-import Particles from 'react-particles-js';
 
 
 const particleOptions = {
